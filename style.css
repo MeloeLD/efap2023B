@@ -8,9 +8,12 @@ body {
 	background-size: cover;
 }
 
+
+/* polices d'écritures */
 h1 { 
 	color: #EFE9E0; 
 	font-family: 'Oleo Script', cursive;
+	font-size: 60px;
 }
 
 h2 {
@@ -28,16 +31,18 @@ h4 {
 	font-family: 'Oleo Script', cursive;
 }
 
-.titre_blanc {
-	color: #EFE9E0;
-	font-family: 'Oleo Script', cursive;
-}
 
 h5 {
 	color: #FDBD0A;
 	font-family: 'Oleo Script', cursive;
 }
+
 ul {
+	color: #EFE9E0;
+	font-family: 'Oleo Script', cursive;
+}
+
+.titre_blanc {
 	color: #EFE9E0;
 	font-family: 'Oleo Script', cursive;
 }
@@ -48,6 +53,7 @@ ul {
 }
 
 
+/* Barre de navigation */
 .my-navbar {
 	object-fit: cover;
 	background-color: #15083D;
@@ -66,16 +72,27 @@ ul {
 	margin-right: 40px;
 }
 
+.link {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Page d'accueil */
 .slide1 {
 	background-image: url("images/ciel_etoile.jpg");
-	width: 1440px;
-	height: 600px;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
+
+/* Vidéo youtube et page qui renvoie vers un autre lien */
 .slide2 {
 	padding: 50px;
 	margin: 50px;
@@ -83,6 +100,8 @@ ul {
 	justify-content: space-between;
 }
 
+
+/* Galerie d'images */
 .slide3 {
 	background-color: #F9F5E9;
 	padding: 150px;
@@ -94,6 +113,8 @@ ul {
 	justify-content: space-between;
 }
 
+
+/* Les 2 div avec du texte */
 .slide4 {
 	background-color: #1C0D4D;
 	padding: 50px;
@@ -110,10 +131,11 @@ ul {
 
 .liste_signes {
 	background-color: #3C2A76;
-	padding: 20px;
 	margin: 10px;
 	font-size: large;
 	width: 250px;
+	text-align: center;
+	text-justify: flex-end;
 }
 
 .frame2 {
@@ -123,6 +145,15 @@ ul {
 	width: 500px;
 }
 
+.texte_signes {
+	margin: 50px;
+	display: flex;
+	flex-direction: column; 
+	align-items: flex-start;
+}
+
+
+/* La carte avec la modale */
 .slide5 {
 	padding: 50px;
 	margin: 50px;
@@ -141,15 +172,17 @@ ul {
 	justify-content: space-around;
 }
 
+
+/* Le footer */
 .footer {
 	background-color: #1C0D4D;
-	margin-top: 50px;
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
 }
 
 .informations {
+	margin-top: 25px;
 	width: 1000px;
 	display: flex;
 	justify-content: space-around;
@@ -171,4 +204,3 @@ ul {
 	display: flex;
 	justify-content: space-around;
 }
-
