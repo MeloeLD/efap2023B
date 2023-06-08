@@ -19,18 +19,20 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
 	<!-- Barre de navigation -->
-	<div class="my-navbar"> 
-		<a href="index.html"><img width="250px" src="images/logo.png" class="logo"></a>
-		<div class="links">
-			<a target="_blank" href="" class="link">À PROPOS</a>
-			<a target="_blank" href="signes.html" class="link">SIGNES</a>
-			<a target="_blank" href="" class="link">HOROSCOPE</a>
+	<header> 
+		<span id= "ancre1"></span> <!--bouton pour remonter en haut de page-->
+		<div class="my-navbar">
+			<img width="250px" src="images/logo.png" class="logo">
+			<div class="links">
+				<a target="_blank" href="" class="link">À PROPOS</a>
+				<a target="_blank" href="signes.html" class="link">SIGNES</a>
+				<a target="_blank" href="" class="link">HOROSCOPE</a>
+			</div>
 		</div>
-	</div>
+	</header>
 
-
+	<!-- Class avec image galaxie en grand -->
 	<div class="slide1">
 
 		<h1>Astéros</h1>
@@ -38,6 +40,7 @@
 
 	</div>
 
+	<!-- Class fond blanc et vidéo YT -->
 	<div class="slide2">
 		<iframe width="600" height="350" src="https://www.youtube.com/embed/08G5s5MMGtc" title="JE FAIS LE THÈME ASTRAL DE GAD ELMALEH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -47,21 +50,24 @@
 			<p class="texte_bleu">Oui oui, vous ne rêvez pas !<br>L'humoriste incontournable Gad Elmaleh rejoins la youtubeuse Shera pour parler astrologie !<br>Une vidéo croustillante nous faisant découvrir l'acteur sous d'autres facettes grâce à son signe.<br>Et ça, on adore ! ✨</p>
 
 			<br>
-			<a target="_blank" href="signes.html" class="btn btn-primary">Découvrir mon signe</a>
+			<a target="_blank" href="signes.html" class="btn btn-info"><strong>Découvrir mon signe</strong></a>
 		</div>
 	</div>
 
+	<!-- Class fond clair avec galery -->
 	<div class="slide3">
 		<div class="galery">
-
-			<img src="images/galaxie.png" width="350px" height="200px">
-			<img src="images/soleil.png" width="350px" height="200px">
-			<img src="images/carte.png" width="350px" height="200px">
+			<!--passer la souris sur le défilement, il s'arrête-->
+            <marquee id="defile"><span onmouseover="getElementById('defile').stop();" onmouseout="getElementById('defile').start();">
+				<img src="images/galaxie.png" width="350px" height="200px">
+				<img src="images/soleil.png" width="350px" height="200px">
+				<img src="images/carte.png" width="350px" height="200px">
+			</span></marquee>
 
 		</div>
 	</div>
 
-
+	<!-- Class fond bleu avec div texte -->
 	<div class="slide4">
 
 		<!-- Liste des signes -->
@@ -89,19 +95,20 @@
 			<h3>Quel est le signe le plus...</h3>
 
 			<div class="texte_signes">
-				<h4>Susceptible :</h4><p class="texte_bleu">les Scorpions, gouvernés par Mars, la planète de la guerre, ils ont tendance à aisément prendre mal les choses…</p>
+				<h4>Susceptible :</h4><p class="texte_bleu">Les Scorpions, gouvernés par Mars, la planète de la guerre, ils ont tendance à aisément prendre mal les choses…</p>
 				<br>
-				<h4>Rare :</h4><p class="texte_bleu">les Capricornes, sont les plus rares en France.</p>
+				<h4>Rare :</h4><p class="texte_bleu">Les Capricornes, sont les plus rares en France.</p>
 				<br>
-				<h4>Sensible :</h4><p class="texte_bleu">les Cancers et les Poissons sont connus pour être des hypersensibles.</p>
+				<h4>Sensible :</h4><p class="texte_bleu">Les Cancers et les Poissons sont connus pour être des hypersensibles.</p>
 				<br>
-				<h4>Drôle :</h4><p class="texte_bleu">les Gémeaux ont à priori un grand sens de l'humour.</p>
+				<h4>Drôle :</h4><p class="texte_bleu">Les Gémeaux ont à priori un grand sens de l'humour.</p>
 				<br>
-				<h4>Fiable :</h4><p class="texte_bleu">les Taureaux sont les plus fidèles, ils représentent stabilité et solidité</p>
+				<h4>Fiable :</h4><p class="texte_bleu">Les Taureaux sont les plus fidèles, ils représentent stabilité et solidité</p>
 			</div>
 		</div>
 	</div>
 
+	<!-- Class fond blanc avec map -->
 	<div class="slide5">
 		<div class="texte_et_bouton">
 			<div>
@@ -114,6 +121,11 @@
 			<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
 			 	<strong>JE M'INSCRIS</strong>
 			</button>
+
+			<br>
+
+			<!-- <a target="_blank" href="#ancre1" class="btn btn-primary">△</a> -->
+			<a href="#ancre1"><button type="button" class="btn btn-primary">△</button></a>
 
 			<!-- Modal -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -136,6 +148,7 @@
 
 		</div>
 
+		<!-- Carte -->
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.8598574333353!2d1.4438229212214106!3d43.60469504342798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aec795aa712b23%3A0x53b447240d8e2344!2sPlace%20du%20Capitole!5e1!3m2!1sfr!2sfr!4v1685094297355!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
